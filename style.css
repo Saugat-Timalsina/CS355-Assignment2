@@ -1,0 +1,116 @@
+:root {
+    --bg-color: #f4f4f4;
+    --text-color: #333;
+    --primary-color: #007bff;
+    --secondary-color: #ff4d4d;
+    --input-bg: #fff;
+}
+
+.dark-mode {
+    --bg-color: #1e1e1e;
+    --text-color: #f4f4f4;
+    --primary-color: #00a8cc;
+    --secondary-color: #e63946;
+    --input-bg: #2c2c2c;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: var(--bg-color);
+    color: var(--text-color);
+    margin: 0;
+    padding: 20px;
+    transition: 0.3s;
+}
+
+header {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    padding: 15px;
+    background: var(--primary-color);
+    color: white;
+}
+
+.content {
+    max-width: 500px;
+    margin: auto;
+    padding: 20px;
+    background: var(--input-bg);
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    
+}
+
+img {
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input, textarea {
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background: var(--input-bg);
+    color: var(--text-color);
+}
+
+button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button[type="submit"] {
+    background: var(--primary-color);
+    color: white;
+}
+
+button[type="submit"]:hover {
+    background: #0056b3;
+}
+
+button[type="reset"] {
+    background: var(--secondary-color);
+    color: white;
+}
+
+button[type="reset"]:hover {
+    background: #c22d3a;
+}
+
+#displayData {
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 15px;
+    background: var(--input-bg);
+    border-radius: 8px;
+}
+
+.data-row {
+    padding: 8px;
+    border-bottom: 1px solid #ccc;
+}
+
+#darkModeToggle {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+}
